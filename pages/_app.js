@@ -1,10 +1,13 @@
 import React from "react";
+import ReactGA from 'react-ga'
 import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import Theme from "../src/ui/theme";
 import Header from "../src/ui/Header";
 import Footer from "../src/ui/Footer";
+
+ReactGA.initialize("G-3EPCTYQ3N1");
 
 export default class MyApp extends App {
   constructor(props) {
