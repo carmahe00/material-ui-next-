@@ -3,11 +3,11 @@ import ReactGA from 'react-ga'
 import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
-import Theme from "../src/ui/theme";
+import Theme from "../src/ui/Theme";
 import Header from "../src/ui/Header";
 import Footer from "../src/ui/Footer";
 
-ReactGA.initialize("G-3EPCTYQ3N1");
+ReactGA.initialize("UA-215627193-1");
 
 export default class MyApp extends App {
   constructor(props) {
@@ -37,7 +37,7 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         <Head>
           <title>My page</title>
         </Head>
@@ -60,7 +60,7 @@ export default class MyApp extends App {
           />
 
         </ThemeProvider>
-      </React.Fragment>
+      </>
     );
   }
 }

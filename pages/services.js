@@ -54,7 +54,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
                 <link rel="canonical" key="canonical" href="jad.com/services" />
             </Head>
             <Grid item style={{ marginLeft: matchesSM ? 0 : "5em", marginTop: matchesSM ? "1em" : "2em" }} >
-                <Typography variant="h2" align={matchesSM ? "center" : undefined} gutterBottom  > Services </Typography>
+                <Typography variant="h1" align={matchesSM ? "center" : undefined} gutterBottom  > Services </Typography>
             </Grid>
             <Grid item > {/* iOS/ANdroid Block */}
                 <Grid container direction="row" className={classes.servicesContainer} justifyContent={matchesSM ? "center" : "flex-end"} style={{ marginTop: matchesSM ? "1em" : "5em" }} >

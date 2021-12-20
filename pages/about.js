@@ -50,7 +50,7 @@ const About = ({ setSelectedIndex, setValue }) => {
                 <link rel="canonical" key="canonical" href="jad.com/about" />
             </Head>
             <Grid item className={classes.rowContainer} style={{ marginTop: matchesMD ? "1em" : "2em" }}>
-                <Typography align={matchesMD ? "center" : undefined} variant="h2" >About us</Typography>
+                <Typography align={matchesMD ? "center" : undefined} variant="h1" >About us</Typography>
             </Grid>
             <Grid item container justifyContent="center" className={classes.rowContainer} style={{ marginTop: "3em" }} >
                 <Typography variant="h4" align="center" className={classes.missionStatement} >

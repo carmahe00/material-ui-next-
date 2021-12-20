@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
-import theme from '../src/ui/theme';
+import Theme from '../src/ui/Theme';
 import createEmotionCache from '../src/createEmotionCache';
 
 export default class MyDocument extends Document {
@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.png" />
           {/** PWA primary color */}
-          <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta name="theme-color" content={Theme.palette.primary.main} />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://i.imgur.com/C8evBTM.png" />
           <meta property="og:image:type" content="image/png" />
